@@ -43,4 +43,9 @@ public class VenueDetailsCall implements ApiCallService<VenueDetailRS, VenueDeta
 		return response;
 	}
 
+	@Override
+	public String getName() {
+		return this.getClass().getSimpleName();
+	}
+
 }

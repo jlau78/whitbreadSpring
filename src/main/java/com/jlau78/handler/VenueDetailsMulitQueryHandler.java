@@ -87,6 +87,7 @@ public class VenueDetailsMulitQueryHandler implements Handler<List<String>, List
 		String errorMsg = "";
     VenueDetailRS rs = null;
     try {
+    	log.info("Calling Foursquare API for venueDetails information. venueId:{}", venueId);
       VenueDetailsRequest rq = new VenueDetailsRequest(venueId);
       rs = getApiCall().call(rq);
 

@@ -8,6 +8,11 @@ import com.jlau78.common.exceptions.AppException;
 public interface ApiCallService<R, Q> {
 
 	/**
+	 * Name of this ApiCallService
+	 */
+	public String getName();
+
+	/**
 	 * Call the Api
 	 * 
 	 * @param request

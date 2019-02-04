@@ -40,4 +40,9 @@ public class VenueSearchCall implements ApiCallService<VenueSearchRS, VenueReque
 		return response;
 	}
 
+	@Override
+	public String getName() {
+		return this.getClass().getSimpleName();
+	}
+
 }

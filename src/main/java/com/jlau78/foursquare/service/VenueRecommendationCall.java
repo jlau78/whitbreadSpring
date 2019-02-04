@@ -46,4 +46,10 @@ public class VenueRecommendationCall implements ApiCallService<VenueSearchRS, Ve
 
 	}
 
+	@Override
+	public String getName() {
+		return this.getClass().getSimpleName();
+	}
+
+
 }

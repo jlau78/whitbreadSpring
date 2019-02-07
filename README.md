@@ -1,4 +1,4 @@
-# Whitbread Premier Inn Code Test Jan 2019
+# Whitbread Premier Inn Code Test Java 11.2 SpringBoot 2.1.2 Jan 2019
 
 Author: James Lau
 jameslauwf@gmail.com

@@ -22,4 +22,9 @@ public interface ApiCallService<R, Q> {
 	 */
 	public R call(final Q request) throws AppException;
 
+	default void init() {
+		System.out.println("Starting ApiCallService:" + this.getClass().getName());
+
+	}
+
 }

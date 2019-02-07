@@ -33,6 +33,8 @@ public class VenueSearchCall implements ApiCallService<VenueSearchRS, VenueReque
 	public VenueSearchRS call(VenueRequest request) throws AppException {
 		VenueSearchRS response = null;
 		
+		ApiCallService.super.init();
+		
 		if (request != null) {
 			response = getApiClient().venueSearchByName(request.getNear(), request.getQuery(), request.getLimit(), request.getIntent(), apiVersion, 
 												clientId, clientSecret);
